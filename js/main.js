@@ -33,7 +33,7 @@ const showData = (allData) => {
                 <h2 class="card-title">${phone_name}</h2>
                 <p>Brand new ${phone_name} phone. Manufacture by ${brand}</p>
                 <div class="card-actions justify-end">
-                    <label onclick="phoneDetails('${slug}')" for="my-modal-4" class="btn btn-primary">Buy Now</label>
+                    <label onclick="phoneDetails('${slug}')" for="my-modal-4" class="btn btn-primary">Details</label>
                 </div>
             </div>
         </div>
@@ -76,7 +76,8 @@ const showModalData = (phones) => {
             <p>Storage: ${storage[0]}</p>
             <p>Release Date: ${(releaseDate ? releaseDate: 'Release date not found')}</p>
             <div class="card-actions justify-end">
-                <button class="btn btn-primary">Watch</button>
+                <button class="btn btn-primary">Buy now</button>
+                <button class="btn btn-secondary">Add to cart</button>
             </div>
         </div>
     </div>
