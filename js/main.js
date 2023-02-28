@@ -1,4 +1,4 @@
-const loadData = (inputText = '') => {
+const loadData = (inputText = 'iphone') => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${inputText}`
     fetch(url)
         .then(res => res.json())
@@ -77,7 +77,7 @@ const showModalData = (phones) => {
             <p>Release Date: ${(releaseDate ? releaseDate: 'Release date not found')}</p>
             <div class="card-actions justify-end">
                 <button class="btn btn-primary">Buy now</button>
-                <button class="btn btn-secondary">Add to cart</button>
+                <button class="btn">Add to cart</button>
             </div>
         </div>
     </div>
